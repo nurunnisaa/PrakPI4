@@ -1,0 +1,138 @@
+body {
+font: 100% Lucida Sans, Verdana;
+margin: 0px;
+line-height: 26px;
+background-image: url(../img/UNPER\ 2.jpeg);
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
+background-position: center;
+}
+.container {
+min-width: 1000px;
+}
+.wrapper {
+position: relative;
+overflow: auto;
+width: 100%;
+}
+#topbar, #sidebar, #bottom, .menuitem {
+border-radius: 4px;
+margin: 4px;
+}
+#topbar {
+background-color: #04AA6D;
+color: #ffffff;
+padding: 10px;
+width: auto;
+height: 100%;
+}
+.logo-text {
+display: flex;
+align-items: center;
+}
+
+.logo-text img { 
+height: 70px;
+width: auto;
+padding-top: 1px;
+    
+}
+.logo-text span{
+margin-left: 8px;
+}
+#menubar {
+width: 200px;
+background-color: rgba(8, 8, 8, 0.8);
+height: 795px;
+float: left;
+margin-left: 4px;
+position: absolute;
+
+
+}
+.menuitem{
+background-color: #f1f1f1;
+border: 1px solid #d4d4d4;
+list-style-type:none;
+padding-left: 10px;
+cursor: pointer;
+text-align: center;
+}
+.menuitem>a{
+text-decoration: none;
+}
+.menuitem:hover {
+background-color: #ffffff;
+}
+.menuitem:first-child {
+background-color:#04AA6D;
+color: white;
+font-weight:bold;
+}
+a {
+color: #000000;
+text-decoration: underline;
+}
+a:hover {
+text-decoration: none;
+}
+#main {
+padding: 10px;
+margin: 0 210px;
+background-color: rgba(8, 8, 8, 0.8);
+color: #ffffff;
+}
+
+#sidebar {
+background-color: #32a5e78e;
+color: #ffffff;
+padding: 10px;
+width: 180px;
+bottom: 0;
+top: 0;
+right: 0;
+position: absolute;
+text-align: center;
+}
+
+.news img {
+    height: auto;
+    width: 170px;
+    align-items: center;
+}
+#bottom {
+border: transparent;
+background-color: transparent;
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 10px;
+font-size: 100%;
+
+
+}
+#topbar h1, #topbar p, #menulist {
+margin: 0;
+padding: 0;
+}
+
+table {
+    border: 1px ;
+}
+
+th, td {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#vimilist{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fakultas li>a{
+    color: #ffffff;
+}
+
+iframe {
+    border: 1px;
+}

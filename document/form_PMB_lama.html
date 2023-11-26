@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nurunnisa</title>
+        <style>
+            body {
+              text-decoration: none;
+              font-family: Helvetica, sans-serif;
+      
+            }
+            h2,h4{
+                color: rgb(75, 74, 74)
+            }
+            label {
+                font-size: 13.5px;
+                font-weight: none;
+            }
+
+            textarea {
+                font-family: Helvetica, sans-serif;
+                word-spacing:normal;
+
+            }
+
+            fieldset {
+                width: 95%;
+            
+            }
+
+            form{
+                max-width:50%;
+                margin: 20px auto;
+                padding: 20px 20px 20px 20px;
+                background: #e5effc;
+                border-radius: 8px;
+                
+                
+            }
+
+            input[type="text"],
+            input[type="email"], 
+            input[type="number"],
+            input[type="reset"],
+            input[type="submit"],
+            input[type="datetime"],
+            textarea{
+                border: 1px;
+                background: rgba(250, 250, 250, 0.568);
+                height: auto;
+                padding: 5px;
+                background-color: rgba(194, 193, 193, 0.450);
+                box-shadow: 0 1px 0 rgba(0,0,0,0,0.3) inset;
+                width: 250px;
+            }
+
+            input[type="date"]{
+                padding: 1px 2px 1px 2px;
+                height: auto;
+                width: 250px;
+                background-color: rgba(194, 193, 193, 0.450);
+                border-radius: 0px;
+
+            }
+
+            input[type="date"]{
+                font-size: 12px;
+            }
+            
+            select {
+                padding: 1px 10px 1px 0px;
+                height: auto;
+                border-radius: 2px;
+                width: 259px;
+                background-color: rgba(194, 193, 193, 0.450);
+            }
+
+            fieldset{
+                margin-bottom: 30px;
+               
+            }
+
+            label {
+                display :inline;
+            }
+
+            button{
+                padding: 3px 20px 3px 20px;
+            }
+            
+            .container {
+                padding: 5px;
+            }
+
+            
+      
+          </style>
+          <link rel="shortcut icon" href="../img/favicon.ico" />
+    </head>
+    <body>
+       
+                    <h2 align="center" >FORM PENDAFTARAN <br> MAHASISWA BARU</h2>
+                
+
+        <form action="formpendaftaran.php" method="POST" autocomplete="on">
+            <fieldset>
+            
+                <h4>DATA DIRI</h4>
+                <label for="nama">Nama Lengkap</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"  autofocus required>
+                <br><br>
+
+                <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Laki-laki" required >Laki-laki
+                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Perempuan" required>Perempuan
+                <br><br>
+
+                <label for="tempat_lahir">Tempat Lahir</label><br>
+                <input type="text" id="tempat_lahir" name="tempat_lahir" 
+                placeholder="Tempat Lahir" required maxlength="35">
+                <br><br>
+
+                <label for="tanggal_lahir">Tanggal Lahir : </label><br>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                <br><br>
+
+                <label for="alamat">Alamat</label><br>
+                <textarea name="alamat" id="alamat" cols="45" rows="5" 
+                placeholder="Masukkan Alamat" required></textarea>
+                <br><br>
+
+                <label for="kopos">Kode Pos</label><br>
+                <input type="number" id="kopos" name="kopos" placeholder="Kode Pos" required >
+                <br><br>
+
+                <label for="agama">Agama </label><br>
+                <select id="agama" name="agama" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="konghucu">Konghucu</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <br><br>
+           
+                <label for="warga">Kewarganegaraan</label><br>
+                <select id="warga" name="warga" required>
+                    <option value="">Pilih Kewarganegaraan</option>
+                    <option value="wni">WNI</option>
+                    <option value="wna">WNA</option>
+                </select>
+                <br><br>
+            
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="E-mail" required >
+                <br><br>
+
+                <label for="telepon">Telepon/HP</label><br>
+                <input type="number" id="telepon" name="telepon" placeholder="Telepon/HP" required >
+                <br><br><hr>
+
+                <h4>ASAL SEKOLAH</h4>
+                <label for="nisn">Nomor Induk Siswa Nasional</label><br>
+                <input type="text" id="nisn" name="nisn" placeholder="NISN" required>
+                <br><br>
+
+                <label for="sekolah">Nama Asal Sekolah</label><br>
+                <input type="text" id="sekolah" name="sekolah" placeholder="Nama Asal Sekolah" required>
+                <br><br>
+
+                <label for="alamat_sekolah">Alamat Sekolah</label><br>
+                <textarea name="alamat_sekolah" id="alamat_sekolah" cols="45" rows="5" 
+                placeholder="Alamat Sekolah" required></textarea>
+                <br><br>
+
+                <label for="kopos">Kode Pos</label><br>
+                <input type="number" id="kopos" name="kopos" placeholder="Kode Pos" required >
+                <br><br>
+
+                <label for="lulus">Tahun Lulus</label><br>
+                <input type="datetime" id="lulus" name="lulus" placeholder="Tahun Lulus" required>
+                <br><br> 
+
+                <label for="jurusan">Jurusan</label><br>
+                <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan" required>
+                <br><br><hr>
+
+                <h4>DATA ORANG TUA/WALI</h4>
+                <label for="ayah">Nama Ayah/Wali</label><br>
+                <input type="text" id="ayah" name="ayah" placeholder="Nama Ayah/Wali" required>
+                <br><br>
+
+                <label for="pekerjaanAyah">Pekerjaan Ayah/Wali</label> <br>
+                <select id="pekerjaanAyah" name="pekerjaanAyah" required>
+                    <option value="">Pilih Pekerjaan</option>
+                    <option value="tidak">Tidak/Belum Kerja</option>
+                    <option value="tni">TNI</option>
+                    <option value="polri">POLRI</option>
+                    <option value="pns">PNS</option>
+                    <option value="wiraswasta">Wiraswasta</option>
+                    <option value="buruh">Buruh</option>
+                    <option value="petani">Petani</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <br><br>
+            
+                <label for="ibu">Nama Ibu</label><br>
+                <input type="text" id="ibu" name="ibu" placeholder="Nama Ibu" required>
+                <br><br>
+
+                <label for="pekerjaanibu">Pekerjaan Ibu</label><br>
+                <select id="pekerjaanibu" name="pekerjaanibu" required>
+                    <option value="">Pilih Pekerjaan</option>
+                    <option value="tidak">Tidak/Belum Kerja</option>
+                    <option value="tni">TNI</option>
+                    <option value="polri">POLRI</option>
+                    <option value="pns">PNS</option>
+                    <option value="wiraswasta">Wiraswasta</option>
+                    <option value="buruh">Buruh</option>
+                    <option value="petani">Petani</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <br><br>
+            
+                <label for="alamat_ortu">Alamat Orang Tua</label><br>
+                <textarea name="alamat_ortu" id="alamat_ortu" cols="45" rows="5" 
+                placeholder="Alamat Orang Tua" required></textarea>
+                <br><br>
+
+                <label for="kopos">Kode Pos</label><br>
+                <input type="number" id="kopos" name="kopos" placeholder="Kode Pos" required >
+                <br><br>
+
+                <label for="teleponortu">Telepon/HP Orang Tua</label><br>
+                <input type="number" id="teleponortu" name="teleponortu" placeholder="Telepon/HP" required >
+                <br><br>
+
+                <label for="statusortu">Status Orang Tua :</label><br>
+                <label for="statusayah">Ayah</label>
+                <select id="statusayah" name="statusayah" required>
+                    <option value="">Pilih</option>
+                    <option value="kandung">Kandung</option>
+                    <option value="tiri">Tiri</option>
+                    <option value="angkat">Angkat</option>
+                    <option value="lainnya">Lainnya</option>
+                </select> 
+                <br><br>
+            
+                
+                <label for="statusibu" >Ibu</label>&nbsp;
+                <select id="statusibu" name="statusibu" required>
+                    <option value="">Pilih</option>
+                    <option value="kandung">Kandung</option>
+                    <option value="tiri">Tiri</option>
+                    <option value="angkat">Angkat</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+                <br><br>
+            
+                <label for="pendidikanortu">Pendidikan Orang Tua :</label><br>
+                <label for="pendidikanayah">Ayah</label>
+                <select id="pendidikanayah" name="pendidikanayah" required>
+                    <option value="">Pilih</option>
+                    <option value="tidak">Tidak Sekolah</option>
+                    <option value="sd">SD</option>
+                    <option value="smp">SMP</option>
+                    <option value="slta">SLTA Sederajat</option>
+                    <option value="d1">D1</option>
+                    <option value="d2/d3">D2/D3</option>
+                    <option value="s1/d4">S1/D4</option>
+                    <option value="s2/s3">S2/S3</option>
+                </select>
+                <br><br>
+            
+                
+                <label for="pendidikanibu">Ibu</label>&nbsp;
+                <select id="pendidikanibu" name="pendidikanibu" required>
+                    <option value="">Pilih</option>
+                    <option value="tidak">Tidak Sekolah</option>
+                    <option value="sd">SD</option>
+                    <option value="smp">SMP</option>
+                    <option value="slta">SLTA Sederajat</option>
+                    <option value="d1">D1</option>
+                    <option value="d2/d3">D2/D3</option>
+                    <option value="s1/d4">S1/D4</option>
+                    <option value="s2/s3">S2/S3</option>
+                </select>
+                <br><br>
+           
+                
+                <label for="kandung">Orang Tua Kandung :</label><br>
+                <label for="kandungayah">Ayah</label>
+                <select id="kandungayah" name="kandungayah" required>
+                    <option value="">Pilih  </option>
+                    <option value="hidup">Masih Hidup</option>
+                    <option value="wafat">Sudah Wafat</option>
+                    <option value="lain">Lainnya</option>
+                </select> 
+                <br><br>
+            
+                
+                <label for="kandungibu">Ibu</label>&nbsp;
+                <select id="kandungibu" name="pkandungibu" required>
+                    <option value="">Pilih  </option>
+                    <option value="hidup">Masih Hidup</option>
+                    <option value="wafat">Sudah Wafat</option>
+                    <option value="lain">Lainnya</option>
+                </select>
+                <br><br>
+            
+                
+                <label for="penghasilanayah">Penghasilan Ayah/Wali</label><br>
+                <select id="penghasilanayah" name="penghasilanayah" required>
+                    <option value="">Pilih Penghasilan </option>
+                    <option value="tidakada">Tidak Ada</option>
+                    <option value="1jtkurang">(<) Rp.1.000.000</option>
+                    <option value="1jt3jt">Rp.1.000.000 - Rp.3.000.000</option>
+                    <option value="3jt5jt">Rp.3.000.000 - Rp.5.000.000</option>
+                    <option value="5jtlebih">(>) Rp.5.000.000</option>
+                </select>
+                <br><br>
+           
+                
+                <label for="penghasilanibu">Penghasilan Ibu</label><br>
+                <select id="penghasilanibu" name="penghasilanibu" required>
+                    <option value="">Pilih Penghasilan </option>
+                    <option value="tidakada">Tidak Ada</option>
+                    <option value="1jtkurang">(<) Rp.1.000.000</option>
+                    <option value="1jt3jt">Rp.1.000.000 - Rp.3.000.000</option>
+                    <option value="3jt5jt">Rp.3.000.000 - Rp.5.000.000</option>
+                    <option value="5jtlebih">(>) Rp.5.000.000</option>
+                </select>
+                <br><br>
+            
+                
+                <label for="tanggungan">Jumlah Tanggungan</label><br>
+                <input type="text" id="tanggungan" name="tanggungan" placeholder="Jumlah Tanggungan" required> 
+                <br><br><hr>
+
+                <h4>CATATAN KHUSUS</h4>
+                <label for="disabilitas">Penyandang Disabilitas</label><br>
+                <select id="disabilitas" name="disabilitas">
+                    <option value="">Pilih</option>
+                    <option value="tidak">Tidak</option>
+                    <option value="Ya">Ya</option>
+                </select>
+                <br><br>
+            
+                <label for="kondisi">Kondisi Kesehatan (sakit kronis, keturunan, dsbg)</label><br>
+                <textarea name="kondisi" id="kondisi" cols="40" rows="3" placeholder="Kondisi Kesehatan" ></textarea>
+                <br><br>
+
+                <h6 style="color: grey;"><input type="checkbox" id="sk" name="sk" required width="5px"> 
+                    Semua data yang saya inputkan sebenar-benarnya dan dalam keadaan sadar
+                </h6>
+                
+                <h6 style="color: grey;"><input type="checkbox" id="sk" name="sk" required width="5px"> 
+                    Saya setuju dengan <a href="sk" alt="syarat&ketentuan">syarat & ketentuan yang berlaku</a>
+                </h6>
+
+                <button name="reset" type="reset" id="contact-reset" >Reset</button>
+                <button name="submit" type="submit" id="contact-submit" data-submit="....Sending">Submit</button>
+            </fieldset>
+        </form>  
+       
+       
+
+    </body>
+</html>

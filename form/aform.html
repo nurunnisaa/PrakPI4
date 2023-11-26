@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatibel" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Pendaftaran</title>
+        <link rel="stylesheet" href="styleform.css">
+          <link rel="shortcut icon" href="../img/favicon.ico" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="title" align="center">
+            <h1>FORMULIR PENDAFTARAN</h1>
+            </div>
+
+        <form action="formpendaftaran.php" method="POST" autocomplete="on">
+            <div class="user-details">
+                <div clas="user-title">
+                <h4>DATA DIRI</h4>
+            </div>
+            <br>
+                
+            <div>
+                <label for="nama">Nama Lengkap</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"  autofocus  required>
+            </div>
+            <div>
+                <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Laki-laki" required >Laki-laki
+                <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Perempuan" required>Perempuan
+            </div>
+                
+
+            <div>
+                <label for="tempat_lahir">Tempat Lahir</label><br>
+                <input type="text" id="tempat_lahir" name="tempat_lahir" 
+                placeholder="Tempat Lahir" required maxlength="35">
+            </div>
+                
+
+            <div>
+                <label for="tanggal_lahir">Tanggal Lahir : </label><br>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+            </div>   
+
+            <div>
+                <label for="alamat">Alamat</label><br>
+                <textarea name="alamat" id="alamat" cols="45" rows="5" 
+                placeholder="Masukkan Alamat" required></textarea>
+            </div>
+
+            <div>
+                <label for="kopos">Kode Pos</label><br>
+                <input type="number" id="kopos" name="kopos" placeholder="Kode Pos" required >
+            </div>
+            
+            <div>
+                <label for="agama">Agama </label><br>
+                <select id="agama" name="agama" required>
+                    <option value="">Pilih Agama</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="konghucu">Konghucu</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="warga">Kewarganegaraan</label><br>
+                <select id="warga" name="warga" required>
+                    <option value="">Pilih Kewarganegaraan</option>
+                    <option value="wni">WNI</option>
+                    <option value="wna">WNA</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" placeholder="E-mail" required >
+            </div>
+
+            <div>
+                <label for="telepon">Telepon/HP</label><br>
+                <input type="number" id="telepon" name="telepon" placeholder="Telepon/HP" required >
+            </div>
+            </div>
+        
+            <div class="user-scholl">
+            <div>
+                <h4>ASAL SEKOLAH</h4>
+            </div><br>
+
+            <div>
+                <label for="nisn">Nomor Induk Siswa Nasional</label><br>
+                <input type="text" id="nisn" name="nisn" placeholder="NISN" required>
+            </div><br>
+
+            <div>
+                <label for="sekolah">Nama Asal Sekolah</label><br>
+                <input type="text" id="sekolah" name="sekolah" placeholder="Nama Asal Sekolah" required>
+            </div><br>
+
+            <div>
+                <label for="alamat_sekolah">Alamat Sekolah</label><br>
+                <textarea name="alamat_sekolah" id="alamat_sekolah" cols="45" rows="5" 
+                placeholder="Alamat Sekolah" required></textarea>
+            </div>
+
+            <div>
+                <label for="kopos">Kode Pos</label><br>
+                <input type="number" id="kopos" name="kopos" placeholder="Kode Pos" required >
+            </div>
+
+            <div>
+                <label for="lulus">Tahun Lulus</label><br>
+                <input type="datetime" id="lulus" name="lulus" placeholder="Tahun Lulus" required>
+            </div>
+
+            <div>
+                <label for="jurusan">Jurusan</label><br>
+                <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan" required>
+            </div>
+        </div>
+       
+            
+        <div class="selection">
+            <div>
+                <h4>JALUR SELEKSI</h4>
+            </div><br>
+
+            <div class="item-selection">
+                <label for="kategori">Katergori Pendaftaran</label><br>
+                <select id="kategori" name="kategori" required>
+                    <option value="">Pilih </option>
+                    <option value="reguler">Reguler</option>
+                    <option value="karyawan">Kelas Karyawan</option>
+                </select>
+            </div><br>
+
+            <div class="item-selection">
+                <label for="jalur">Jalur Seleksi</label><br>
+                <select id="jalur" name="jalur" required>
+                    <option value="">Pilih </option>
+                    <option value="Tes">Tes Seleksi</option>
+                    <option value="undangan">Undangan</option>
+                    <option value="mandiri">Mandiri</option>
+                </select>
+            </div><br>
+
+            <div class="item-selection">
+                <label for="prodi">Program Studi</label><br>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilihan Pertama</option>
+                    <option value="PBI">Pendidikan Bahasa Inggris</option>
+                    <option value="PGSD">Pendidikan Guru Sekolah Dasar</option>
+                    <option value="manajemen">Manajemen</option>
+                    <option value="akuntansi">Akuntansi</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="TS">Teknik Sipil</option>
+                    <option value="farmasi">Farmasi</option>
+                    <option value="agro">Agroteknologi</option>
+                    <option value="agri">Agribisnis</option>
+                    <option value="ternak">Peternakan</option>
+                </select><br><br>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilihan Kedua</option>
+                    <option value="PBI">Pendidikan Bahasa Inggris</option>
+                    <option value="PGSD">Pendidikan Guru Sekolah Dasar</option>
+                    <option value="manajemen">Manajemen</option>
+                    <option value="akuntansi">Akuntansi</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="TS">Teknik Sipil</option>
+                    <option value="farmasi">Farmasi</option>
+                    <option value="agro">Agroteknologi</option>
+                    <option value="agri">Agribisnis</option>
+                    <option value="ternak">Peternakan</option>
+                </select>
+            </div><br>
+        </div>
+
+            <div class="khusus">
+            <div>
+                <h4>CATATAN KHUSUS</h4>
+            </div><br>
+
+            <div>
+                <label for="disabilitas">Penyandang Disabilitas</label><br>
+                <select id="disabilitas" name="disabilitas">
+                    <option value="">Pilih</option>
+                    <option value="tidak">Tidak</option>
+                    <option value="Ya">Ya</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="kondisi">Kondisi Kesehatan (sakit kronis, keturunan, dsbg)</label><br>
+                <textarea name="kondisi" id="kondisi" cols="40" rows="3" placeholder="Kondisi Kesehatan" ></textarea>
+            </div>
+
+            <div>
+                <h6 style="color: grey;"><input type="checkbox" id="sk" name="sk" required width="5px"> 
+                    Semua data yang saya inputkan sebenar-benarnya dan dalam keadaan sadar
+                </h6>
+                <h6 style="color: grey;"><input type="checkbox" id="sk" name="sk" required width="5px"> 
+                    Saya setuju dengan <a href="sk" alt="syarat&ketentuan">syarat & ketentuan yang berlaku</a>
+                </h6>
+            </div>
+
+                <button name="reset" type="reset" id="contact-reset" >Reset</button>
+                <button name="submit" type="submit" id="contact-submit" data-submit="....Sending">Submit</button>
+            </div>
+            </fieldset>
+        </form>  
+        
+       
+    </div>
+    </body>
+</html>
